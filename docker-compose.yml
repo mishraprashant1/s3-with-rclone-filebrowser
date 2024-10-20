@@ -12,8 +12,6 @@ services:
       - SYS_ADMIN
     devices:
       - "/dev/fuse:/dev/fuse"
-    # volumes:
-    #   - ./rclone.conf:/config/rclone/rclone.conf
     security_opt:
       - apparmor:unconfined
     env_file:
